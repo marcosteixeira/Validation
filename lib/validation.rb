@@ -3,6 +3,7 @@ module Validation
   require "rules/is_boolean"
   require "rules/is_string"
   require "rules/is_positive"
+  require "rules/is_email"
 
   class << self
 
