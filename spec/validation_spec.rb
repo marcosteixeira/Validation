@@ -57,5 +57,15 @@ describe Validation do
     it "should return false" do
       expect(subject.validate(positive: -5)).to eq(false)
     end
-  end  
+  end
+
+  context "validate is email" do
+    it "should return true" do
+      expect(subject.validate(email: "user@email.com")).to eq(true)
+    end
+
+    it "should return false" do
+      expect(subject.validate(email: "useremail.com")).to eq(false)
+    end
+  end
 end
